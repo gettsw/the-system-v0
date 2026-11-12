@@ -103,3 +103,7 @@ live-in-desktop-design
 .userdata/
 .goose-data/
 launch.log
+.blox/
+.code-review-graph/
+.experience/
+.intersect/

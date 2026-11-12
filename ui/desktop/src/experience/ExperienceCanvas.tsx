@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import type { SystemApi } from '../system/SystemHost';
-import Cat from './Cat';
 
 const COLOR: Record<string, string> = {
   user: 'text-green-200',
@@ -27,8 +26,7 @@ export default function ExperienceCanvas({ system }: { system: SystemApi }) {
   };
 
   return (
-    <div className="relative h-screen flex flex-col bg-black text-green-400 font-mono text-sm p-3">
-      <Cat />
+    <div className="h-screen flex flex-col bg-black text-green-400 font-mono text-sm p-3">
       <div className="flex-1 overflow-y-auto whitespace-pre-wrap">
         {system.log.length === 0 && (
           <div className="text-green-600">THE MAINFRAME ONLINE. Type /help.</div>
